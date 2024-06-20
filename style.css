@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;}
+
+section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+section:nth-child(odd) {
+    background-color: skyblue;
+}
+section h2 {
+    text-align: left;
+}
+section h3 {
+    text-align: left;
+}
+section h4 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+section img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+
+.wrapper {
+    padding-top: 100px;
+    max-width: 1000px;
+    margin: auto;
+    /* background-color: rgb(218,248,255) */
+}
+
+h1 {
+    color: rgb(9, 63, 94);
+    font-size: 48px;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+h4 {
+    font-size:  18px;
+    font-weight: 300;
+}
+h5 {
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.btns {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.btns .container {
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+    /* background-color: rgb(205, 205, 205); */
+    margin: auto
+}
+.btns_menu {
+    display: flex;
+    justify-content: center;
+}
+.btns_menu .btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #193a40;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    margin: 4px;
+    background-color: #c6ecf0;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btns_menu .btn:hover {
+    background-color: white;
+    border: 1px solid #666;
+}
+.arrow-up {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s;
+}
+.arrow-up span {
+    font-size: 50px;
+}
+.arrow-up.show{
+    opacity: 1;
+}
